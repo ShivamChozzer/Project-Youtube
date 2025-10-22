@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project Youtube</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- importing google fonts (Roboto)-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- importing google fonts (Roboto)-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> <!-- importing google fonts (Roboto)-->
+    <link rel="stylesheet" href="/styles/general.css"> <!-- connecting General css file -->
+    <link rel="stylesheet" href="/styles/header.css"> <!-- connecting Header css file -->
+    <link rel="stylesheet" href="/styles/sidebar.css"> <!-- connecting Sidebar css file -->
+    <link rel="stylesheet" href="/styles/video.css"> <!-- connecting Video css file -->
+  </head>
+  <body>
+    <header class="header"> <!-- youtube header -->
+      <div class="left-section">
+        <img class="hamburger-menu" src="/icons/hamburger-menu.svg">
+        <img class="youtube-logo" src="/icons/youtube-logo.svg">
+      </div>
+      <div class="middle-section">
+          <input class="search-bar" type="text" placeholder="Search">
+          <button class="search-button" type="submit">
+            <img class="search-icon" src="/icons/search.svg">
+            <div class="tooltip">Search</div> <!-- tooltip -->
+          </button>
+          <button class="voice-search-button">
+            <img class="voice-search-icon" src="/icons/voice-search-icon.svg">
+            <div class="tooltip">Search with your voice</div> <!-- tooltip -->
+          </button>
+      </div>  <!--put position absolute inside position relative to create a tooltip-->
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="/icons/upload.svg">
+          <div class="tooltip">Create</div> <!-- tooltip -->
+        </div>
+        <div class="youtube-apps-icon-container">
+          <img class="youtube-apps-icon" src="/icons/youtube-apps.svg">
+          <div class="tooltip">Youtube apps</div> <!-- tooltip -->
+        </div>
+       <div class="notifications-icon-container">
+          <div class="notifications-count">9+</div>
+          <img class="notifications-icon" src="/icons/notifications.svg">
+          <div class="tooltip">Notifications</div> <!-- tooltip -->
+        </div>
+        <img class="current-user-picture" src="/Profile pictures/myprofile.jpg">
+      </div>
+    </header>
+    <nav class="sidebar"> <!-- youtube sidebar-->
+      <div class="sidebar-link">
+        <a href="/youtube.html">
+          <img src="/icons/home.svg">
+        </a>
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="/icons/explore.svg">
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="/icons/subscriptions.svg">
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="/icons/originals.svg">
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <a href="https://music.youtube.com/">
+          <img src="/icons/youtube-music.svg">
+        </a>
+        <div>Youtube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="/icons/library.svg">
+        <div>Library</div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="video-grid"> <!-- video preview container -->
+
+        <div class="video-preview"> <!-- video preview - 1 -->
+          <div class="thumbnail-row">
+            <a href="https://youtu.be/czLetl4hR28?si=1By83BW65wgEdBl6">
+              <img class="thumbnail" src="/Thumbnails/thumbnail1.avif">
+            </a>
+            <div class="video-duration">17:29</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture-container">
+              <div class="channel-picture">
+                <a href="https://www.youtube.com/@ShamSharmaShow">
+                  <img class="profile-picture" src="/Profile pictures/profile1.jpg">
+                </a>
+              </div>
+              <div class="channel-tooltip"> <!-- channel tooltip -->
+                <img class="channel-tooltip-picture" src="/Profile pictures/profile1.jpg">
+                <div class="tooltip-stats-container">
+                  <div class="channel-tooltip-name">The Sham Sharma Show</div>
+                  <div class="channel-tooltip-stats">20.2 lakh subscribers</div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                <a href="https://youtu.be/czLetl4hR28?si=1By83BW65wgEdBl6">
+                  Prashant Kishore WITHDRAWS From Bihar Elections | End Of Jan Suraaj? 17 minutes
+                </a>
+              </p>
+              <p class="video-author">
+                The Sham Sharma Show
+              </p>
+              <p class="video-stats">
+                24k views 2 hours ago
+              </p>
+            </div>
+          </div>  
+        </div>
+
+
+        <div class="video-preview"> <!-- video preview - 2 -->
+          <div class="thumbnail-row">
+            <a href=" https://youtu.be/3jNYM6BvbjE?si=dEpV2LKN--_ceP24">
+              <img class="thumbnail" src="/Thumbnails/thumbnail2.avif">
+            </a>
+            <div class="video-duration">18:54</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture-container">
+              <div class="channel-picture">
+                <a href="https://www.youtube.com/@ShanPrasher">
+                  <img class="profile-picture" src="/Profile pictures/profile2.jpg">
+                </a>
+              </div>
+              <div class="channel-tooltip"> <!-- channel tooltip -->
+                <img class="channel-tooltip-picture" src="/Profile pictures/profile2.jpg">
+                <div class="tooltip-stats-container">
+                  <div class="channel-tooltip-name">Shan Prasher</div>
+                  <div class="channel-tooltip-stats">4.68 lakh subscribers</div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                <a href=" https://youtu.be/3jNYM6BvbjE?si=dEpV2LKN--_ceP24">
+                  Are Bollywood Nepo-Kids IMMUNE To FAILURE? 
+                </a>
+              </p>
+              <p class="video-author">
+                Shan Prasher
+              </p>
+              <p class="video-stats">
+                5.78 lakh views &#183; 5 days ago
+              </p>
+            </div>
+          </div>  
+        </div>
+
+
+        <div class="video-preview"> <!-- video preview - 3 -->
+          <div class="thumbnail-row">
+            <a href="https://youtu.be/NJtMkvGa_IY?si=52b9vNUp1hGFgxV7">
+              <img class="thumbnail" src="/Thumbnails/thumbnail3.avif">
+            </a>
+            <div class="video-duration">5:09</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture-container">
+              <div class="channel-picture">
+                <a href="https://www.youtube.com/@PrimeVideoIN">
+                  <img class="profile-picture" src="/Profile pictures/profile3.jpg">
+                </a>
+              </div>
+              <div class="channel-tooltip"> <!-- channel tooltip -->
+                <img class="channel-tooltip-picture" src="/Profile pictures/profile3.jpg">
+                <div class="tooltip-stats-container">
+                  <div class="channel-tooltip-name">Prime Video India</div>
+                  <div class="channel-tooltip-stats">3.71 crore subscribers</div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                <a href="https://youtu.be/NJtMkvGa_IY?si=52b9vNUp1hGFgxV7">
+                  Bag Chori | @ZakirKhan  | Stand Up Comedy | Zakir Khan: Delulu Express | Prime Video India 5 minutes, 10 seconds
+                </a>
+              </p>
+              <p class="video-author">
+                Prime Video India
+              </p>
+              <p class="video-stats">
+                3.3 lakh views &#183; 1 day ago
+              </p>
+            </div>
+          </div>  
+        </div>
+
+
+        <div class="video-preview"> <!-- video preview - 4 -->
+          <div class="thumbnail-row">
+            <a href="https://youtu.be/rng_yUSwrgU?si=rTWhqVmPxdevRNMb ">
+              <img class="thumbnail" src="/Thumbnails/thumbnail4.avif">
+            </a>
+            <div class="video-duration">11:19</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture-container">
+              <div class="channel-picture">
+                <a href="https://www.youtube.com/@mkbhd">
+                  <img class="profile-picture" src="/Profile pictures/profile4.jpg">
+                </a>
+              </div>
+              <div class="channel-tooltip"> <!-- channel tooltip -->
+                <img class="channel-tooltip-picture" src="/Profile pictures/profile4.jpg">
+                <div class="tooltip-stats-container">
+                  <div class="channel-tooltip-name">Marques Brownlee</div>
+                  <div class="channel-tooltip-stats">2.04 crore subscribers</div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                <a href="https://youtu.be/rng_yUSwrgU?si=rTWhqVmPxdevRNMb">
+                 iPhone 17 Review: No Asterisks!
+                </a>
+              </p>
+              <p class="video-author">
+                Marques Brownlee
+              </p>
+              <p class="video-stats">
+                39 lakh views &#183; 2 weeks ago
+              </p>
+            </div>
+          </div>  
+        </div>
+
+
+        <div class="video-preview"> <!-- video preview - 5 -->
+          <div class="thumbnail-row">
+            <a href="https://youtu.be/ZLmya84b8FE?si=1tcoAL8kGBCQEv5b">
+              <img class="thumbnail" src="/Thumbnails/thumbnail5.avif">
+            </a>
+            <div class="video-duration">9:00</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture-container">
+              <div class="channel-picture">
+                <a href="https://www.youtube.com/@BeastBoyShub">
+                  <img class="profile-picture" src="/Profile pictures/profile5.jpg">
+                </a>
+              </div>
+              <div class="channel-tooltip"> <!-- channel tooltip -->
+                <img class="channel-tooltip-picture" src="/Profile pictures/profile5.jpg">
+                <div class="tooltip-stats-container">
+                  <div class="channel-tooltip-name">BeastBoyShub</div>
+                  <div class="channel-tooltip-stats">70.1 lakh subscribers</div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                <a href="https://youtu.be/ZLmya84b8FE?si=1tcoAL8kGBCQEv5b">
+                  REVEALING MY 2025 GAMING SETUP
+                </a>
+              </p>
+              <p class="video-author">
+                BeastBoyShub
+              </p>
+              <p class="video-stats">
+                3 lakh views &#183; 9 hours ago
+              </p>
+            </div>
+          </div>  
+        </div>
+
+
+        <div class="video-preview"> <!-- video preview - 6 -->
+          <div class="thumbnail-row">
+            <a href="https://youtu.be/sHQg0Y-Grrk?si=NEwJ7UXxx19INWr-">
+              <img class="thumbnail" src="/Thumbnails/thumbnail6.avif">
+            </a>
+            <div class="video-duration">5:29</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture-container">
+              <div class="channel-picture">
+                <a href="https://www.youtube.com/@NetflixIndiaOfficial">
+                  <img class="profile-picture" src="/Profile pictures/profile6.jpg">
+                </a>
+              </div>
+              <div class="channel-tooltip"> <!-- channel tooltip -->
+                <img class="channel-tooltip-picture" src="/Profile pictures/profile6.jpg">
+                <div class="tooltip-stats-container">
+                  <div class="channel-tooltip-name">Netflix India</div>
+                  <div class="channel-tooltip-stats">2.79 crore subscribers</div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                <a href="https://youtu.be/sHQg0Y-Grrk?si=NEwJ7UXxx19INWr-">
+                  Lord Krishna Reveals His DIVINE Vishwaroop Avatar To Arjun 🔥🤯 | Kurukshetra | Netflix India
+                </a>
+              </p>
+              <p class="video-author">
+                Netflix India
+              </p>
+              <p class="video-stats">
+                3.8 lakh views &#183; 3 days ago
+              </p>
+            </div>
+          </div>  
+        </div>
+
+
+        <div class="video-preview"> <!-- video preview - 7 -->
+          <div class="thumbnail-row">
+            <a href="https://youtu.be/5GCfYLguTIs?si=nedMjikqbSyXuAhI">
+              <img class="thumbnail" src="/Thumbnails/thumbnail7.avif">
+            </a>
+            <div class="video-duration">2:41</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture-container">
+              <div class="channel-picture">
+                <a href="https://www.youtube.com/@KaranAujlaOfficial">
+                  <img class="profile-picture" src="/Profile pictures/profile7.jpg">
+                </a>
+              </div>
+              <div class="channel-tooltip"> <!-- channel tooltip -->
+                <img class="channel-tooltip-picture" src="/Profile pictures/profile7.jpg">
+                <div class="tooltip-stats-container">
+                  <div class="channel-tooltip-name">Karan Aujla</div>
+                  <div class="channel-tooltip-stats">46.8 lakh subscribers</div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                <a href="https://youtu.be/5GCfYLguTIs?si=nedMjikqbSyXuAhI">
+                  BOYFRIEND(MUSIC VIDEO) KARAN AUJLA| SUNANDA | IKKY | Latest Punjabi Songs 2025
+                </a>
+              </p>
+              <p class="video-author">
+                Karan Aujla
+              </p>
+              <p class="video-stats">
+                72 lakh views &#183; 22 hours ago
+              </p>
+            </div>
+          </div>  
+        </div>
+
+
+        <div class="video-preview"> <!-- video preview - 8 -->
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=pn7-ZM81hQM&list=RDpn7-ZM81hQM&start_radio=1">
+              <img class="thumbnail" src="/Thumbnails/thumbnail8.avif">
+            </a>
+            <div class="video-duration">3:30</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture-container">
+              <div class="channel-picture">
+                <a href="https://www.youtube.com/@arpitbaala">
+                  <img class="profile-picture" src="/Profile pictures/profile8.jpg">
+                </a>
+              </div>
+              <div class="channel-tooltip"> <!-- channel tooltip -->
+                <img class="channel-tooltip-picture" src="/Profile pictures/profile8.jpg">
+                <div class="tooltip-stats-container">
+                  <div class="channel-tooltip-name">Arpit Bala</div>
+                  <div class="channel-tooltip-stats">9.97 lakh subscribers</div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                <a href="https://www.youtube.com/watch?v=pn7-ZM81hQM&list=RDpn7-ZM81hQM&start_radio=1">
+                  PYARI AMAANAT - Arpit Bala, @aodgotit  ,  @angadsvirk  (Official Music Video)
+                </a>
+              </p>
+              <p class="video-author">
+                Arpit Bala
+              </p>
+              <p class="video-stats">
+                3.3 lakh views &#183; 6 days ago
+              </p>
+            </div>
+          </div>  
+        </div>
+
+
+        <div class="video-preview"> <!-- video preview - 9 -->
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=LWCQ927gwas&t=8497s">
+              <img class="thumbnail" src="/Thumbnails/thumbnail9.avif">
+            </a>
+            <div class="video-duration">2:30:17</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture-container">
+              <div class="channel-picture">
+                <a href="https://www.youtube.com/@ranveerallahbadia">
+                  <img class="profile-picture" src="/Profile pictures/profile9.jpg">
+                </a>
+              </div>
+              <div class="channel-tooltip"> <!-- channel tooltip -->
+                <img class="channel-tooltip-picture" src="/Profile pictures/profile9.jpg">
+                <div class="tooltip-stats-container">
+                  <div class="channel-tooltip-name">Ranveer Allahbadia</div>
+                  <div class="channel-tooltip-stats">1.07 crore subscribers</div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                <a href="https://www.youtube.com/watch?v=LWCQ927gwas&t=8497s">
+                  MUST WATCH For Indians : Ramayana's SCIENTIFIC History I Nilesh Oak Returns On TRS
+                </a>
+              </p>
+              <p class="video-author">
+                Ranveer Allahbadia
+              </p>
+              <p class="video-stats">
+                4.4 lakh &#183; 5 days ago
+              </p>
+            </div>
+          </div>  
+        </div>
+
+
+        <div class="video-preview"> <!-- video preview - 10 -->
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=h5bY9So9SA0">
+              <img class="thumbnail" src="/Thumbnails/thumbnail10.avif">
+            </a>
+            <div class="video-duration">12:01</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture-container">
+              <div class="channel-picture">
+                <a href="https://www.youtube.com/@souravjvlogs">
+                  <img class="profile-picture" src="/Profile pictures/profile10.jpg">
+                </a>
+              </div>
+              <div class="channel-tooltip"> <!-- channel tooltip -->
+                <img class="channel-tooltip-picture" src="/Profile pictures/profile10.jpg">
+                <div class="tooltip-stats-container">
+                  <div class="channel-tooltip-name">Sourav Joshi vlogs </div>
+                  <div class="channel-tooltip-stats">3.69 crore subscribers</div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                <a href="https://www.youtube.com/watch?v=h5bY9So9SA0">
+                  Bohot Nuksaan Hogya 😭 New Gharpe
+                </a>
+              </p>
+              <p class="video-author">
+                Sourav Joshi vlogs 
+              </p>
+              <p class="video-stats">
+                38 lakh views &#183; 10 hours ago 
+              </p>
+            </div>
+          </div>  
+        </div>
+
+
+        <div class="video-preview"> <!-- video preview - 11 -->
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=YP9L6rh-uLY">
+              <img class="thumbnail" src="/Thumbnails/thumbnail11.avif">
+            </a>
+            <div class="video-duration">1:22:01</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture-container">
+              <div class="channel-picture">
+                <a href="https://www.youtube.com/@SETIndia">
+                  <img class="profile-picture" src="/Profile pictures/profile11.jpg">
+                </a>
+              </div>
+              <div class="channel-tooltip"> <!-- channel tooltip -->
+                <img class="channel-tooltip-picture" src="/Profile pictures/profile11.jpg">
+                <div class="tooltip-stats-container">
+                  <div class="channel-tooltip-name">SET India</div>
+                  <div class="channel-tooltip-stats">18.7 crore subscribers</div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                <a href="https://www.youtube.com/watch?v=YP9L6rh-uLY">
+                  Prashant Kishore WITHDRAWS From Bihar Elections | End Of Jan Suraaj? 17 minutes
+                </a>
+              </p>
+              <p class="video-author">
+                SET India
+              </p>
+              <p class="video-stats">
+                68 lakh &#183; 8 months ago
+              </p>
+            </div>
+          </div>  
+        </div>
+
+
+        <div class="video-preview"> <!-- video preview - 12 -->
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=2yaBUQQMhyo">
+              <img class="thumbnail" src="/Thumbnails/thumbnail12.avif">
+            </a>
+            <div class="video-duration">10:33</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture-container">
+              <div class="channel-picture">
+                <a href="https://www.youtube.com/@Career247Official">
+                  <img class="profile-picture" src="/Profile pictures/profile12.jpg">
+                </a>
+              </div>
+              <div class="channel-tooltip"> <!-- channel tooltip -->
+                <img class="channel-tooltip-picture" src="/Profile pictures/profile12.jpg">
+                <div class="tooltip-stats-container">
+                  <div class="channel-tooltip-name">Career247</div>
+                  <div class="channel-tooltip-stats">15.4 lakh subscribers</div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                <a href="https://www.youtube.com/watch?v=2yaBUQQMhyo">
+                  Indian Navy is the GUARDIAN of INDIAN OCEAN!! PM Modi Declares on INS Vikrant!!
+                </a>
+              </p>
+              <p class="video-author">
+                Career247
+              </p>
+              <p class="video-stats">
+                7 lakh views &#183; 1 day ago 
+              </p>
+            </div>
+          </div>  
+        </div>
+      </section>
+    </main>
+
+  </body>
+</html>
